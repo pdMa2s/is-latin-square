@@ -12,7 +12,8 @@ import java.util.Set;
 public class CrossValidator implements LatinSquareValidator{
     /**
      *  This validator goes through the diagonal of the square matrix checking for duplicates in the elements of each
-     *  overlapping column and row in a cross like manner. Time complexity is O(n + n^2) -> O(n^)
+     *  overlapping column and row in a cross like manner. Time complexity is O(n + n^2) -> O(n^). Space complexity
+     *  is O(n^2).
      *
      */
 
@@ -22,6 +23,9 @@ public class CrossValidator implements LatinSquareValidator{
             return false;
         
         int n = square.length;
+
+        if (n == 0)
+            return true;
 
         for (int i = 0; i < n; i++) {
             Set<Integer> rowElements = new HashSet<>(n);
