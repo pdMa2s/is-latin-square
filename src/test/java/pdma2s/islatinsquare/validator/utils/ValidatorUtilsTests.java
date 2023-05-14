@@ -1,4 +1,4 @@
-package pdma2s.islatinsquare;
+package pdma2s.islatinsquare.validator.utils;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static pdma2s.islatinsquare.validator.utils.ValidatorUtils.isInRange;
 import static pdma2s.islatinsquare.validator.utils.ValidatorUtils.isSquare;
 
-public class ValidatorUtilsTest {
+public class ValidatorUtilsTests {
 
     @Test
     void testNotSquare() {

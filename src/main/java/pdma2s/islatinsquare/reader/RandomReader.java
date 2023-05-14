@@ -81,7 +81,7 @@ public class RandomReader implements MatrixReader{
                 if (rand.nextDouble() < .90)
                     square[i][j] = rand.nextInt(size) + 1;
                 else
-                    square[i][j] = rand.nextInt(rand.nextInt());
+                    square[i][j] = rand.nextInt();
             }
         }
 
