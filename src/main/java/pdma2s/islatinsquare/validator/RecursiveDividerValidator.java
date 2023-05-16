@@ -10,7 +10,6 @@ import static pdma2s.islatinsquare.validator.utils.ValidatorUtils.isInRange;
 import static pdma2s.islatinsquare.validator.utils.ValidatorUtils.isSquare;
 
 @Component
-@Primary
 public class RecursiveDividerValidator implements LatinSquareValidator{
     /**
      * Recursive implementation that subdivides the matrix into smaller squares and check if the elements are in range

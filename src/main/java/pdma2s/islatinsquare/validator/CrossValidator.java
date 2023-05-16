@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Component
-//@Primary
+@Primary
 public class CrossValidator implements LatinSquareValidator{
     /**
      *  This validator goes through the diagonal of the square matrix checking for duplicates in the elements of each
