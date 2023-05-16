@@ -3,12 +3,14 @@ package pdma2s.islatinsquare.validator;
 import static pdma2s.islatinsquare.validator.utils.ValidatorUtils.isInRange;
 import static pdma2s.islatinsquare.validator.utils.ValidatorUtils.isSquare;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @Component
+//@Primary
 public class CrossValidator implements LatinSquareValidator{
     /**
      *  This validator goes through the diagonal of the square matrix checking for duplicates in the elements of each
@@ -24,8 +26,8 @@ public class CrossValidator implements LatinSquareValidator{
         
         int n = square.length;
 
-        if (n == 1 && square[0][0] == 1)
-            return true;
+        if (n == 1)
+            return square[0][0] == 1;
 
         for (int i = 0; i < n; i++) {
             Set<Integer> rowElements = new HashSet<>(n);
